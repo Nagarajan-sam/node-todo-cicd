@@ -17,10 +17,10 @@ pipeline {
                 sh 'docker push nagarajan-demo/node-todo-test:latest'
                 }
             }
-        }
         stage('Deploy'){
             steps{
                 sh "docker-compose down && docker-compose up -d"
             }
         }
     }
+}
