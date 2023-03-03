@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Push'){
             steps{
-                sh 'docker push nagarajan-demo/node-todo-test:latest'
+                echo 'push not supported for demo purpose'
                 }
             }
         stage('Deploy'){
