@@ -5,7 +5,3 @@ services:
     build: .
     ports:
       - "8000:8000"
-  environment:
-  - credentialsId=dockerHub
-  - passwordVariable=dockerHubPassword
-  - usernameVariable=dockerHubUser
